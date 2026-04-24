@@ -1,0 +1,21 @@
+{
+  "name": "polyassistent",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "report": "node src/report.js",
+    "derive-creds": "node src/net/deriveApiCreds.js",
+    "dashboard": "npm run dev --prefix web"
+  },
+  "dependencies": {
+    "@polymarket/clob-client": "^5.8.0",
+    "dotenv": "^17.3.1",
+    "ethers": "^6.11.1",
+    "https-proxy-agent": "^7.0.6",
+    "socks-proxy-agent": "^8.0.5",
+    "undici": "^6.21.3",
+    "ws": "^8.18.0"
+  }
+}
